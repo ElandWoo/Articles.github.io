@@ -7,6 +7,7 @@ body {
     background: url("avator.jpeg");/*设置背景图片*/
     background-repeat: no-repeat;
     background-attachment: fixed;/*设置背景图不随网页滑动而改变*/
+    background-position-x: center;
     background-size: cover;
 }
 .content {
