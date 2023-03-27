@@ -136,7 +136,7 @@ audio {
 .btn {
     cursor: pointer; /*使鼠标放上边显示手指形状*/
     font-size: 20px;
-    width: 18%;
+    width: 21%;
     height: 60px;
     position: absolute;
     top: 27%;
