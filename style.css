@@ -7,12 +7,6 @@ body {
     background: url("avator.jpeg")no-repeat center top;/*设置背景图片*/
     backbround-size: cover;
     background-attachment: fixed;
-    /*
-    background-repeat: no-repeat;
-    background-attachment: fixed;/*设置背景图不随网页滑动而改变*/
-    background-position: center;
-    background-size: contain;
-    */
 }
 .content {
     perspective: 100px;
@@ -70,7 +64,7 @@ audio {
 .centercolumn {
     margin: auto;
     width: 80%;
-    height:1500px;
+    height:1440px;
     padding: 10px;
     
 }
@@ -150,6 +144,7 @@ audio {
     background-image: linear-gradient(rgba(211, 104, 29, 0.95),rgba(5,72,99,0.95));
     border-radius: 40px;
     border-color: dodgerblue;
+    z-index:9999;
 }
 
 .btn p{
