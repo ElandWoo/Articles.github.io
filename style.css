@@ -127,9 +127,9 @@ audio {
 /* 底部 */
 .footer {
     background-image: linear-gradient(rgba(211, 104, 29, 0.80),rgba(5,72,99,0.80));
-   
     text-align: center;
     margin-top: 50px;
+    float: inline-end;
 }
 
 /*中间的字效果*/
