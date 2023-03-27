@@ -4,11 +4,15 @@
 }
 
 body {
-    background: url("avator.jpeg");/*设置背景图片*/
+    background: url("avator.jpeg")no-repeat center top;/*设置背景图片*/
+    backbround-size: cover;
+    background-attachment: fixed;
+    /*
     background-repeat: no-repeat;
     background-attachment: fixed;/*设置背景图不随网页滑动而改变*/
     background-position: center;
     background-size: contain;
+    */
 }
 .content {
     perspective: 100px;
