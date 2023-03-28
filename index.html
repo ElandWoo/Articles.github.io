@@ -22,7 +22,7 @@
 	</div>
 
 	<div class="musicicon">
-		<img class="music" onclick="rbf();" src="./images/music.png" alt="小公子">
+		<img class="music" onclick="bf()" src="./images/music.png" alt="小公子">
 		<audio id="audio" loop="loop">
 			<source src="zztdd.mp3" type="audio/MP3">
 		</audio>
@@ -37,16 +37,10 @@
 
 			function bf() {
 				var audio = document.getElementById('audio');
-				var bf = document.getElementById("bf");
-				if (audio !== null) {
 					if (audio.paused) {
-						audio.play(); //audio.play();// 这个就是播放  
-						bf.innerText = "暂停";
-					} else {
-						audio.pause(); // 这个就是暂停
-						bf.innerText = "播放";
-					}
-				}
+						audio.play(); // 这个就是播放  
+				        } else {
+						audio.pause(); // 这个就是暂ting 
 			}
 		</script>
 	</div>
