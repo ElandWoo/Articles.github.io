@@ -96,7 +96,7 @@ audio {
 
 }
 
-#biaoti {
+#title {
     text-align: center;
 }
 
@@ -116,8 +116,8 @@ audio {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    width: 40px;
-    height: 30px;
+    width: 66px;
+    height: 66px;
     animation: muscis 5s linear infinite;
 }
 
@@ -133,7 +133,7 @@ audio {
     }
 }
 
-.yinyue {
+.musicicon {
     display: flex;
     justify-content: space-between;
     padding: 0 400px;
@@ -149,6 +149,7 @@ audio {
     background-image: linear-gradient(rgba(211, 104, 29, 0.80), rgba(5, 72, 99, 0.80));
     text-align: center;
     margin-top: 50px;
+    bottom: 50px;
     float: inline-end;
 }
 
