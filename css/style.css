@@ -77,7 +77,7 @@ audio {
 .centercolumn {
     margin: auto;
     width: 80%;
-    height: 1500px;
+    height: 1600px;
     padding: 10px;
 
 }
@@ -266,7 +266,7 @@ audio {
   position: fixed;
   transition-property: bottom;
   z-index: 1300;
-  width: initial;
+  width: 40px;
 }
 .back-to-top:hover {
   color: #fc6423;
@@ -335,4 +335,33 @@ audio {
   background: #fc6423;
   border: 1px solid transparent;
   color: #fa9366;
+}
+
+main {
+  display: block;
+}
+.main-inner {
+  margin: 0 auto;
+  width: calc(100% - 20px);
+}
+@media (min-width: 1200px) {
+  .main-inner {
+    width: 1160px;
+  }
+}
+@media (min-width: 1600px) {
+  .main-inner {
+    width: 73%;
+  }
+}
+.main-inner {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+@media (max-width: 991px) {
+  .main-inner {
+    width: auto;
+  }
 }
