@@ -22,11 +22,33 @@
 	</div>
 
 	<div class="musicicon">
-		<img class="music" controls autoplay="autoplay" src="./images/music.png" alt="小公子">
+		<img class="music" onclick="rbf();" src="./images/music.png" alt="小公子">
 		<audio id="audio" loop="loop">
 			<source src="zztdd.mp3" type="audio/MP3">
 		</audio>
+		<script>
+			function rbf() {
+				var audio = document.getElementById('audio');
+				var bf = document.getElementById("bf");
+				audio.currentTime = 0;
+				audio.play();
+				bf.innerText = "暂停";
+			}
 
+			function bf() {
+				var audio = document.getElementById('audio');
+				var bf = document.getElementById("bf");
+				if (audio !== null) {
+					if (audio.paused) {
+						audio.play(); //audio.play();// 这个就是播放  
+						bf.innerText = "暂停";
+					} else {
+						audio.pause(); // 这个就是暂停
+						bf.innerText = "播放";
+					}
+				}
+			}
+		</script>
 	</div>
 	<div class="back-to-top">
 		<i class="fa fa-arrow-up"></i>
