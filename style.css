@@ -4,9 +4,10 @@
 }
 
 body {
-    background: url("avator.jpeg")no-repeat center;/*设置背景图片*/
+    background: url("avator.jpeg")no-repeat;/*设置背景图片*/
     backbround-size: cover;
     background-attachment: fixed;
+    text-align:center
 }
 html {
     height: 100%;
