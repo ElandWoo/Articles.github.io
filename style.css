@@ -67,7 +67,7 @@ audio {
 .centercolumn {
     margin: auto;
     width: 80%;
-    height:1350px;
+    height:1500px;
     padding: 10px;
     
 }
@@ -170,4 +170,27 @@ audio {
     margin-bottom: 10px; /*下部外边框距离10像素*/
     margin: auto;  /*使按钮居中*/
     font-size: 20px; /*设置字体大小*/
+}
+
+
+
+
+.button {
+  background: var(#fff);
+  border: 2px solid var(#555);
+  border-radius: 16px;
+  color: var(#555);
+  display: inline-block;
+  font-size: 0.875em;
+  line-height: 2;
+  padding: 0 20px;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.post-button {
+  margin-top: 40px;
+  text-align: center;
 }
