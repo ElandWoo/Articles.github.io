@@ -149,7 +149,7 @@ audio {
     background-image: linear-gradient(rgba(211, 104, 29, 0.80), rgba(5, 72, 99, 0.80));
     text-align: center;
     margin-top: 50px;
-    bottom: 50px;
+    bottom: 0px;
     float: inline-end;
 }
 
