@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url("avator.jpeg")no-repeat;
+    background: url("../images/avator.jpeg")no-repeat;
     /*设置背景图片*/
     backbround-size: cover;
     background-attachment: fixed;
