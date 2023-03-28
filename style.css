@@ -7,7 +7,7 @@ body {
     background: url("avator.jpeg")no-repeat;/*设置背景图片*/
     backbround-size: cover;
     background-attachment: fixed;
-    text-align:center
+    background-align:center
 }
 html {
     height: 100%;
@@ -130,6 +130,7 @@ audio {
 
 /* 底部 */
 .footer {
+    float: bottom;
     background-image: linear-gradient(rgba(211, 104, 29, 0.80),rgba(5,72,99,0.80));
     text-align: center;
     margin-top: 50px;
