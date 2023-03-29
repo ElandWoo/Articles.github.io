@@ -31,11 +31,7 @@ html {
 /* 顶部导航条 */
 .top {
   overflow: hidden;
-<<<<<<< HEAD
-  background-color: rgba(255, 192, 203, 0.49);
-=======
   background-color: rgba(255, 192, 203, 0.952);
->>>>>>> 0c50d161b79d676f243ce89c28b63349db7f1cd9
 }
 
 .top a {
@@ -77,21 +73,6 @@ audio {
 }
 
 /* center column */
-<<<<<<< HEAD
-.leftcolumn {
-  float: left;
-  width: 10%;
-}
-
-.centercolumn {
-  margin: auto;
-  width: 80%;
-  height: 1600px;
-  padding: 10px;
-=======
-
->>>>>>> 0c50d161b79d676f243ce89c28b63349db7f1cd9
-
 .centercolumn {
   float: right;
   background: white;
@@ -102,21 +83,10 @@ audio {
   width: calc(100% - 252px);
 }
 
-<<<<<<< HEAD
-.rightcolumn {
-  float: left;
-  width: 10%;
-}
-
-/* 文章卡片 */
-.card {
-  background-color: rgba(255, 255, 255, 0.5);
-=======
 
 /* 文章卡片 */
 .card {
   background-color: rgba(255, 255, 255, 0.425);
->>>>>>> 0c50d161b79d676f243ce89c28b63349db7f1cd9
   padding: 20px;
   margin-top: 20px;
   border-radius: 50px;
@@ -140,10 +110,7 @@ audio {
 
 /*旋转的音符效果*/
 .music {
-<<<<<<< HEAD
-=======
   background: url(../images/music.png);
->>>>>>> 0c50d161b79d676f243ce89c28b63349db7f1cd9
   position: fixed;
   bottom: 50px;
   right: 50px;
@@ -178,11 +145,7 @@ audio {
 
 
 .footer {
-<<<<<<< HEAD
   background-image: linear-gradient(white, rgba(255, 192, 203, 0.418), pink);
-=======
-  background-image: linear-gradient(rgba(255, 192, 203, 0.301));
->>>>>>> 0c50d161b79d676f243ce89c28b63349db7f1cd9
   text-align: center;
   font-size: 0.875em;
 
@@ -287,12 +250,8 @@ audio {
 
 /*快速回到页面顶部未成功*/
 .back-to-top {
-<<<<<<< HEAD
-  z-index：999 font-size: 12px;
-=======
   z-index: 999;
   font-size: 12px;
->>>>>>> 0c50d161b79d676f243ce89c28b63349db7f1cd9
   text-align: center;
   transition-delay: 0s;
   transition-duration: 0.2s;
