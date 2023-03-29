@@ -110,6 +110,7 @@ audio {
 /*旋转的音符效果*/
 .music {
   background: url(../images/music.png);
+  z-index: 999;
   position: fixed;
   bottom: 50px;
   right: 50px;
