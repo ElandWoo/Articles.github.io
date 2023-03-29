@@ -21,29 +21,32 @@
 		<h1 class="avr"></h1>
 	</div>
 
-	<div class="musicicon">
-		<img class="music" onclick="bf()" src="./images/music.png" alt="小公子">
-		<audio id="audio" loop="loop">
-			<source src="zztdd.mp3" type="audio/MP3">
-		</audio>
-		<script>
-			function rbf() {
-				var audio = document.getElementById('audio');
-				var bf = document.getElementById("bf");
-				audio.currentTime = 0;
-				audio.play();
-				bf.innerText = "暂停";
-			}
 
-			function bf() {
-				var audio = document.getElementById('audio');
-					if (audio.paused) {
-						audio.play(); // 这个就是播放  
-				        } else {
-						audio.pause(); // 这个就是暂ting 
-			}
+	<div class="musicicon">
+		<img class="music" src="./images/music.png" alt="" id="tb">
+		<audio src="zztdd.mp3" loop preload="auto" id="music"></audio>
+		<script>
+			// JavaScript Document
+			var number = true;
+			var music = document.getElementById("music");
+			var tb = document.getElementById("tb");
+
+			tb.onclick = function () {
+				if (number === false) {
+					number = true;
+					music.pause();
+
+				} else {
+					number = false;
+					music.play();
+				}
+			};
+
 		</script>
 	</div>
+
+
+
 	<div class="back-to-top">
 		<i class="fa fa-arrow-up"></i>
 		<span>0%</span>
@@ -56,7 +59,7 @@
 					<div class="centercolumn">
 						<div class="card" style="background-color:rgba(255, 192, 203, 0.247);>
 
-							<h2 id="title">计划的哲学提案</h2><br />
+							<h2 id=" title">计划的哲学提案</h2><br />
 							<hr />
 							<h4 id="qita">2021 年 12 月 26日</h4>
 
@@ -64,7 +67,8 @@
 
 								新年立flags就像京剧演员在身后插大旗，表面上风风光光的，到年底旗子都倒了。颇有仪式感的写下一项项新年计划，也不一定会执行，毕竟上一年的计划还没有做到有始有终。但是畅想新的一年时，幸福和活力你是一定能切实感受到的。
 							</p>
-							<p style="text-indent:2em">人生规划的本质就是自我人生观的再现，它是人生的提案，是人理想生活的反映。虽然都还没有实现，但你看见自己的人生的哲学，就会觉得快乐。
+							<p style="text-indent:2em">
+								人生规划的本质就是自我人生观的再现，它是人生的提案，是人理想生活的反映。虽然都还没有实现，但你看见自己的人生的哲学，就会觉得快乐。
 							</p>
 							<p style="text-indent:2em"><strong>1. 去不同的地方游玩，体验不同的风俗</strong>
 							<p style="text-indent:2em">
@@ -101,7 +105,7 @@
 
 						<div class="card" style="background-color:rgba(255, 192, 203, 0.247);>
 
-							<h2 id="title">好梦由来最易醒</h2><br />
+							<h2 id=" title">好梦由来最易醒</h2><br />
 							<hr />
 							<h4 id="qita">2023 年 3 月 29日</h4>
 
@@ -115,9 +119,11 @@
 							<p style="text-indent:2em">
 								我再次反思自己，不能爱这样一个抽象的人，否则我该如果生活我自己的生活。罗辑爱上了他笔中的她，这很罕见，他能够在现实生活中找到她，这不仅仅是幸运吧。
 							</p>
-							<p style="text-indent:2em">我不知道我的命运与她的命运在现实的似水流年中会产生怎样的交集，我只感觉把别人的人生拿过来当自己的人生，好像是一种罪过。</p>
+							<p style="text-indent:2em">我不知道我的命运与她的命运在现实的似水流年中会产生怎样的交集，我只感觉把别人的人生拿过来当自己的人生，好像是一种罪过。
+							</p>
 							<p style="text-indent:2em">“这是他的似水流年，不是我的。岁月如流，就如月在当空，照着我们的每一个人，但是每个人的生活都不一样。”</p>
-							<p style="text-indent:2em">宇宙很大，生活更大。梦里梦外，世界都是平行的，你过着你的生活，我过着我的，梦里的角色过着他们的，偶尔产生交集，那就是上天给的缘分。
+							<p style="text-indent:2em">
+								宇宙很大，生活更大。梦里梦外，世界都是平行的，你过着你的生活，我过着我的，梦里的角色过着他们的，偶尔产生交集，那就是上天给的缘分。
 							</p>
 							<p style="text-indent:2em">而我愿意相信，梦那里是个平行世界，在无数个宇宙，因为我的牺牲，我们都在一起了。</p>
 
@@ -133,7 +139,7 @@
 						<br /><br />
 						<div class="card" style="background-color:rgba(255, 192, 203, 0.247);>
 
-							<h2 id="title">职业规划这回事儿</h2><br />
+							<h2 id=" title">职业规划这回事儿</h2><br />
 							<hr />
 							<h4 id="qita">2021-02-19</h4>
 
