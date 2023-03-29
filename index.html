@@ -7,13 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body style="background-color:rgba(255, 192, 203, 0.154);">
-	<div class="top" style="background-color: rgba(255, 192, 203, 0.144);">
-		<a href="https://github.com/ElandWoo" target="_blank">我的Github</a>
-		<a href="https://blog.csdn.net/weixin_52211329?type=blog" target="_blank">我的CSDN</a>
-		<a href="https://m.igetget.com/native/mine/account#/user/detail?enId=d35z49NXgYKw83yzzlxnpb0lEQLP2q"
-			target="_blank">我的得到</a>
-		<a href="https://mubu.com/doc/7Eqhv5lBXWh" target="_blank">我的笔记</a>
+
+<body style="background-color:white;">
+	<div class="top" style="background-color: rgba(255, 192, 203, 0.243);">
+		<a href="https://mubu.com/doc/7Eqhv5lBXWh" target="_blank">测试页面</a>
 	</div>
 	<div class="content">
 		<button class="btn"
@@ -21,18 +18,38 @@
 		<h1 class="avr"></h1>
 	</div>
 
-	<div class="musicicon">
-		<img class="music" onclick=play"" src="./images/music.png" alt="小公子">
-		<audio id="audio" loop="loop">
-			<source src="zztdd.mp3" type="audio/MP3">
-		</audio>
 
+	<!--音乐组件，旋转小图片，点击播放暂停-->
+	<div class="musicicon">
+		<img class="music" src="./images/music.png" alt="" id="tb">
+		<audio src="zztdd.mp3" loop preload="auto" id="music"></audio>
 	</div>
+	<script>
+		// JavaScript Document
+		var number = true;
+		var music = document.getElementById("music");
+		var tb = document.getElementById("tb");
+
+		tb.onclick = function () {
+			if (number === false) {
+				number = true;
+				music.pause();
+			} else {
+				number = false;
+				music.play();
+			}
+		};
+	</script>
+
+	<!--进度条，回到页顶-->
 	<div class="back-to-top">
 		<i class="fa fa-arrow-up"></i>
 		<span>0%</span>
 	</div>
+	<!--书签-->
 	<a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+	<!--网页主体-->
 	<div>
 		<main class="main">
 			<div class="main-inner">
@@ -40,7 +57,8 @@
 					<div class="centercolumn">
 						<div class="card">
 
-							<h2 id="title">计划的哲学提案</h2><br />
+
+							<h2 id=" title">计划的哲学提案</h2><br />
 							<hr />
 							<h4 id="qita">2021 年 12 月 26日</h4>
 
@@ -48,7 +66,10 @@
 
 								新年立flags就像京剧演员在身后插大旗，表面上风风光光的，到年底旗子都倒了。颇有仪式感的写下一项项新年计划，也不一定会执行，毕竟上一年的计划还没有做到有始有终。但是畅想新的一年时，幸福和活力你是一定能切实感受到的。
 							</p>
-							<p style="text-indent:2em">人生规划的本质就是自我人生观的再现，它是人生的提案，是人理想生活的反映。虽然都还没有实现，但你看见自己的人生的哲学，就会觉得快乐。
+
+							<p style="text-indent:2em">
+								人生规划的本质就是自我人生观的再现，它是人生的提案，是人理想生活的反映。虽然都还没有实现，但你看见自己的人生的哲学，就会觉得快乐。
+
 							</p>
 							<p style="text-indent:2em"><strong>1. 去不同的地方游玩，体验不同的风俗</strong>
 							<p style="text-indent:2em">
@@ -85,7 +106,9 @@
 
 						<div class="card">
 
-							<h2 id="title">好梦由来最易醒</h2><br />
+
+							<h2 id=" title">好梦由来最易醒</h2><br />
+
 							<hr />
 							<h4 id="qita">2023 年 3 月 29日</h4>
 
@@ -99,9 +122,13 @@
 							<p style="text-indent:2em">
 								我再次反思自己，不能爱这样一个抽象的人，否则我该如果生活我自己的生活。罗辑爱上了他笔中的她，这很罕见，他能够在现实生活中找到她，这不仅仅是幸运吧。
 							</p>
-							<p style="text-indent:2em">我不知道我的命运与她的命运在现实的似水流年中会产生怎样的交集，我只感觉把别人的人生拿过来当自己的人生，好像是一种罪过。</p>
+
+							<p style="text-indent:2em">我不知道我的命运与她的命运在现实的似水流年中会产生怎样的交集，我只感觉把别人的人生拿过来当自己的人生，好像是一种罪过。
+							</p>
 							<p style="text-indent:2em">“这是他的似水流年，不是我的。岁月如流，就如月在当空，照着我们的每一个人，但是每个人的生活都不一样。”</p>
-							<p style="text-indent:2em">宇宙很大，生活更大。梦里梦外，世界都是平行的，你过着你的生活，我过着我的，梦里的角色过着他们的，偶尔产生交集，那就是上天给的缘分。
+							<p style="text-indent:2em">
+								宇宙很大，生活更大。梦里梦外，世界都是平行的，你过着你的生活，我过着我的，梦里的角色过着他们的，偶尔产生交集，那就是上天给的缘分。
+
 							</p>
 							<p style="text-indent:2em">而我愿意相信，梦那里是个平行世界，在无数个宇宙，因为我的牺牲，我们都在一起了。</p>
 
@@ -117,7 +144,9 @@
 						<br /><br />
 						<div class="card">
 
-							<h2 id="title">职业规划这回事儿</h2><br />
+
+							<h2 id=" title">职业规划这回事儿</h2><br />
+
 							<hr />
 							<h4 id="qita">2021-02-19</h4>
 
@@ -139,31 +168,138 @@
 						</div>
 						<br /><br />
 
+					</div>
+				</div>
+				<div class="toggle sidebar-toggle">
+					<span class="toggle-line toggle-line-first"></span>
+					<span class="toggle-line toggle-line-middle"></span>
+					<span class="toggle-line toggle-line-last"></span>
+				</div>
+
+				<aside class="sidebar" style="margin-top:375px;">
+					<div class="sidebar-inner affix" style="opacity: 1; transform: initial">
+						<ul class="sidebar-nav motion-element">
+							<li class="sidebar-nav-toc">
+								文章目录
+							</li>
+							<li class="sidebar-nav-overview">
+								站点概览
+							</li>
+							<!--noindex-->
+							<div class="post-toc-wrap sidebar-panel">
+							</div>
+							<!--/noindex-->
+
+							<div class="site-overview-wrap sidebar-panel side bar-panel-active"
+								style="max-height: 602px; opacity: 1;">
+								<div class="site-author motion-element" itemprop="author" itemscope
+									itemtype="http://schema.org/Person">
+									<a href="/关于我/index.html">
+										<img class="site-author-image" itemprop="image" alt="我"
+											src="./images/avator.jpeg"></a>
+									<p class="site-author-name" itemprop="name">小公子</p>
+									<div class="site-description" itemprop="description"></div>
+								</div>
+								<div class="site-state-wrap motion-element">
+									<nav class="site-state">
+										<div class="site-state-item site-state-posts">
+											<a href="/archives/">
+
+												<span class="site-state-item-count">3</span>
+												<span class="site-state-item-name">日志</span>
+											</a>
+										</div>
+										<div class="site-state-item site-state-categories">
+											<a href="/categories/">
+
+												<span class="site-state-item-count">1</span>
+												<span class="site-state-item-name">分类</span></a>
+										</div>
+										<div class="site-state-item site-state-tags">
+											<a href="/tags/">
+
+												<span class="site-state-item-count">3</span>
+												<span class="site-state-item-name">标签</span></a>
+										</div>
+									</nav>
+								</div>
+								<div class="links-of-author motion-element">
+									<span class="links-of-author-item">
+										<a href="https://github.com/ElandWoo"
+											title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;russelltao" rel="noopener"
+											target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+									</span>
+									<span class="links-of-author-item">
+										<a href="https://m.igetget.com/native/mine/account#/user/detail?enId=d35z49NXgYKw83yzzlxnpb0lEQLP2q"
+											title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;russelltao" rel="noopener"
+											target="_blank"><i class="fab fa-github fa-fw"></i>Dedao</a>
+									</span>
+									<span class="links-of-author-item">
+										<a href="https://blog.csdn.net/weixin_52211329?type=blog"
+											title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;russelltao" rel="noopener"
+											target="_blank"><i class="fab fa-github fa-fw"></i>CSDN</a>
+									</span>
+								</div>
+
+
+
+								<div class="links-of-recent-posts motion-element">
+									<div class="links-of-recent-posts-title">
+										<i class="fa fa-history fa-fw"></i>
+										最近文章
+									</div>
+									<ul class="links-of-recent-posts-list">
+										<li class="links-of-recent-posts-item">
+											<a href="" title="">好梦由来最易醒</a>
+										</li>
+										<div></div>
+										<li class="links-of-recent-posts-item">
+											<a href="" title="">好梦由来最易醒</a>
+										</li>
+										<div></div>
+										<li class="links-of-recent-posts-item">
+											<a href="" title="">好梦由来最易醒</a>
+										</li>
+										<div></div>
+										<li class="links-of-recent-posts-item">
+											<a href="" title="">好梦由来最易醒</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
 
 					</div>
-
-				</div>
+				</aside>
+				<div id="sidebar-dimmer"></div>
+				>>>>>>> 0c50d161b79d676f243ce89c28b63349db7f1cd9
 			</div>
 		</main>
 
 		<footer class="footer">
 			<br class="footer-inner">
+			<div class="copyright">
+				<span class="with-love">
+					<i class="fa fa-heart"></i>
+				</span>
+				<span class="author" itemprop="copyrightHolder">烦恼全吴公子</span>
+				<span class="post-meta-divider">|</span>
+				<span class="post-meta-item-icon">
+					<i class="fa fa-chart-area"></i>
+				</span>
+				<span class="post-meta-item-text">站点总字数：</span>
+				<span title="站点总字数">345k</span>
+				<span class="post-meta-divider">|</span>
+				<span class="post-meta-item-icon">
+					<i class="fa fa-coffee"></i>
+				</span>
+				<span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+				<span title="站点阅读时长">5:14</span>
+			</div>
 			<dir></dir>
 			<dir></dir>
-			<p>你当像鸟飞往你的山</p>
-			<dir></dir>
-			<a href="https://www.mubucm.com/doc/7Eqhv5lBXWh"><img class="someimg" src="./hou.png" alt="" width="30"></a>
+		</footer>
 	</div>
-	</footer>
-	</div>
-	<script>
-		let mucics = document.getElementById('audio')
-		document.body.addEventListener('mousemove', function () {
-			setTimeout(() => {
-				mucics.play();
-			}, 2000);
-		}, false);
-	</script>
 
 
 	<script>
