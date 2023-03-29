@@ -261,6 +261,7 @@ h6 {
 
 @media (min-width: 768px) {
   .navbar-collapse {
+    text-align: center;
     width: auto;
     border-top: 0;
     -webkit-box-shadow: none;
@@ -269,6 +270,7 @@ h6 {
 }
 
 .navbar-collapse {
+  text-align: center;
   padding-right: 15px;
   padding-left: 15px;
   overflow-x: visible;
@@ -359,18 +361,17 @@ audio {
   box-shadow: initial;
   box-sizing: border-box;
   padding: 40px;
-  width: 80%;
+  width: 85%;
   /*width: calc(100% - 252px);*/
 }
 
 
 /* 文章卡片 */
 .card {
-  background: rgba(255, 192, 203, 0.11);
+  background: rgba(255, 255, 255, 0.401);
   padding: 20px;
   margin-top: 20px;
   border-radius: 50px;
-
 }
 
 #title {
@@ -530,6 +531,38 @@ audio {
 }
 
 /*快速回到页面顶部未成功*/
+.back-to-top.back-to-top-on {
+  bottom: 30px;
+}
+
+.back-to-top {
+  left: auto;
+  right: 30px;
+}
+
+.back-to-top {
+  background: #222;
+  bottom: -100px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  left: 30px;
+  opacity: 0.6;
+  padding: 0 6px;
+  position: fixed;
+  transition-property: bottom;
+  z-index: 1300;
+  width: initial;
+}
+
+.back-to-top {
+  font-size: 12px;
+  text-align: center;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
 .back-to-top {
   z-index: 999;
   font-size: 12px;
@@ -558,9 +591,6 @@ audio {
   color: #fc6423;
 }
 
-.back-to-top.back-to-top-on {
-  bottom: 30px;
-}
 
 @media (max-width: 991px) {
   .back-to-top {
@@ -705,7 +735,7 @@ main {
 
 .sidebar-inner.affix {
   position: fixed;
-  top: 125px;
+  top: 20%;
 }
 
 .sidebar-inner {
@@ -737,13 +767,22 @@ main {
   font-size: 0.875em;
 }
 
+
 li {
+  display: list-item;
   text-align: -webkit-match-parent;
 }
 
 ul {
+  display: block;
   list-style-type: disc;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 20px;
 }
+
 
 
 .sidebar-nav li.sidebar-nav-overview {
@@ -756,6 +795,7 @@ ul {
 }
 
 .navbar-nav>li {
+  text-align: center;
   float: left;
 }
 
@@ -1034,4 +1074,280 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.fa,
+.fas {
+  font-weight: 900;
+}
+
+.fa,
+.far,
+.fas {
+  font-family: "Font Awesome 5 Free";
+}
+
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.header-inner {
+  margin: 0 auto;
+  width: calc(100% - 20px);
+}
+
+@media (min-width: 1200px) {
+  .header-inner {
+    width: 1160px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .header-inner {
+    width: 73%;
+  }
+}
+
+.header-inner {
+  background: white;
+  border-radius: 16px;
+  box-shadow: initial;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 240px;
+}
+
+@media (min-width: 1200px) {
+  .header-inner {
+    width: 240px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-inner {
+    border-radius: initial;
+    position: relative;
+    width: auto;
+  }
+}
+
+.site-nav-toggle,
+.site-nav-right {
+  z-index: 1500;
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  .site-nav-toggle,
+  .site-nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.site-nav-toggle .toggle,
+.site-nav-right .toggle {
+  color: var(--text-color);
+  padding: 10px;
+  width: 22px;
+}
+
+.site-nav-toggle .toggle .toggle-line,
+.site-nav-right .toggle .toggle-line {
+  background: var(--text-color);
+  border-radius: 1px;
+}
+
+.site-nav {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .site-nav {
+    clear: both;
+    display: none;
+  }
+}
+
+.site-nav.site-nav-on {
+  display: block;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .site-nav-toggle,
+  .site-nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+
+.site-nav-toggle .toggle .toggle-line,
+.site-nav-right .toggle .toggle-line {
+  background: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+.main-menu .menu-item-active a::after {
+  background: white;
+  border-radius: 50%;
+  content: ' ';
+  height: 6px;
+  margin-top: -3px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 6px;
+}
+
+.menu {
+  margin-top: 20px;
+  padding-left: 0;
+  text-align: center;
+}
+
+container {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+container {
+  background: #222;
+}
+
+container {
+  display: flex;
+  flex-shrink: 0;
+  padding: 0 10px;
+}
+
+.site-nav-toggle,
+.site-nav-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.site-nav-toggle,
+.site-nav-right {
+  display: none;
+}
+
+.site-nav-toggle .toggle,
+.site-nav-right .toggle {
+  color: black;
+}
+
+.site-nav-toggle .toggle,
+.site-nav-right .toggle {
+  color: black;
+  padding: 10px;
+  width: 22px;
+}
+
+.toggle {
+  line-height: 0;
+}
+
+.site-nav-toggle,
+.site-nav-right {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  .site-nav-toggle,
+  .site-nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+
+.site-nav-toggle .toggle .toggle-line,
+.site-nav-right .toggle .toggle-line {
+  background: black;
+  border-radius: 1px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .site-nav-toggle,
+  .site-nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.site-nav-toggle .toggle .toggle-line,
+.site-nav-right .toggle .toggle-line {
+  background: black;
+}
+
+.toggle .toggle-line:not(:first-child) {
+  z-index: 1400;
+  margin-top: 3px;
+}
+
+.toggle.toggle-arrow .toggle-line-first {
+  color: #000;
+  left: 50%;
+  top: 2px;
+  transform: rotate(45deg);
+  width: 50%;
+}
+
+.toggle.toggle-arrow .toggle-line-middle {
+  color: #000;
+  left: 2px;
+  width: 90%;
+}
+
+.toggle.toggle-arrow .toggle-line-last {
+  color: #000;
+  left: 50%;
+  top: -2px;
+  transform: rotate(-45deg);
+  width: 50%;
+}
+
+.toggle.toggle-close .toggle-line-first {
+  color: #000;
+  transform: rotate(-45deg);
+  top: 5px;
+}
+
+.toggle.toggle-close .toggle-line-middle {
+  color: #000;
+}
+
+.toggle.toggle-close .toggle-line-last {
+  color: #000;
+  transform: rotate(45deg);
+  top: -5px;
 }
