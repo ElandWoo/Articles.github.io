@@ -75,7 +75,6 @@ audio {
 /* center column */
 .centercolumn {
   float: right;
-  background: white;
   border-radius: 16px;
   box-shadow: initial;
   box-sizing: border-box;
@@ -86,6 +85,7 @@ audio {
 
 /* 文章卡片 */
 .card {
+  background: rgba(255, 192, 203, 0.11);
   padding: 20px;
   margin-top: 20px;
   border-radius: 50px;
