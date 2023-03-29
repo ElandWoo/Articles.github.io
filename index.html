@@ -8,11 +8,7 @@
 </head>
 
 <body style="background-color:white;">
-	<div class="top" style="background-color: rgba(255, 192, 203, 0.812);">
-		<a href="https://github.com/ElandWoo" target="_blank">我的Github</a>
-		<a href="https://blog.csdn.net/weixin_52211329?type=blog" target="_blank">我的CSDN</a>
-		<a href="https://m.igetget.com/native/mine/account#/user/detail?enId=d35z49NXgYKw83yzzlxnpb0lEQLP2q"
-			target="_blank">我的得到</a>
+	<div class="top" style="background-color: rgba(255, 192, 203, 0.243);">
 		<a href="https://mubu.com/doc/7Eqhv5lBXWh" target="_blank">我的笔记</a>
 	</div>
 	<div class="content">
@@ -22,42 +18,44 @@
 	</div>
 
 
+	<!--音乐组件，旋转小图片，点击播放暂停-->
 	<div class="musicicon">
 		<img class="music" src="./images/music.png" alt="" id="tb">
 		<audio src="zztdd.mp3" loop preload="auto" id="music"></audio>
-		<script>
-			// JavaScript Document
-			var number = true;
-			var music = document.getElementById("music");
-			var tb = document.getElementById("tb");
-
-			tb.onclick = function () {
-				if (number === false) {
-					number = true;
-					music.pause();
-
-				} else {
-					number = false;
-					music.play();
-				}
-			};
-
-		</script>
 	</div>
+	<script>
+		// JavaScript Document
+		var number = true;
+		var music = document.getElementById("music");
+		var tb = document.getElementById("tb");
 
+		tb.onclick = function () {
+			if (number === false) {
+				number = true;
+				music.pause();
 
+			} else {
+				number = false;
+				music.play();
+			}
+		};
+	</script>
 
+	<!--进度条，回到页顶-->
 	<div class="back-to-top">
 		<i class="fa fa-arrow-up"></i>
 		<span>0%</span>
 	</div>
+	<!--书签-->
 	<a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+	<!--网页主体-->
 	<div>
 		<main class="main">
 			<div class="main-inner">
 				<div class="row">
 					<div class="centercolumn">
-						<div class="card" style="background-color:rgba(255, 192, 203, 0.247);>
+						<div class="card">
 
 							<h2 id=" title">计划的哲学提案</h2><br />
 							<hr />
@@ -103,7 +101,7 @@
 
 						</div>
 
-						<div class="card" style="background-color:rgba(255, 192, 203, 0.247);>
+						<div class="card">
 
 							<h2 id=" title">好梦由来最易醒</h2><br />
 							<hr />
@@ -137,7 +135,7 @@
 
 						</div>
 						<br /><br />
-						<div class="card" style="background-color:rgba(255, 192, 203, 0.247);>
+						<div class="card">
 
 							<h2 id=" title">职业规划这回事儿</h2><br />
 							<hr />
@@ -163,29 +161,137 @@
 
 
 					</div>
-
 				</div>
+				<div class="toggle sidebar-toggle">
+					<span class="toggle-line toggle-line-first"></span>
+					<span class="toggle-line toggle-line-middle"></span>
+					<span class="toggle-line toggle-line-last"></span>
+				</div>
+
+				<aside class="sidebar" style="margin-top:375px;">
+					<div class="sidebar-inner affix" style="opacity: 1; transform: initial">
+						<ul class="sidebar-nav motion-element">
+							<li class="sidebar-nav-toc">
+								文章目录
+							</li>
+							<li class="sidebar-nav-overview">
+								站点概览
+							</li>
+							<!--noindex-->
+							<div class="post-toc-wrap sidebar-panel">
+							</div>
+							<!--/noindex-->
+
+							<div class="site-overview-wrap sidebar-panel side bar-panel-active"
+								style="max-height: 602px; opacity: 1;">
+								<div class="site-author motion-element" itemprop="author" itemscope
+									itemtype="http://schema.org/Person">
+									<a href="/关于我/index.html">
+										<img class="site-author-image" itemprop="image" alt="我"
+											src="./images/avator.jpeg"></a>
+									<p class="site-author-name" itemprop="name">小公子</p>
+									<div class="site-description" itemprop="description"></div>
+								</div>
+								<div class="site-state-wrap motion-element">
+									<nav class="site-state">
+										<div class="site-state-item site-state-posts">
+											<a href="/archives/">
+
+												<span class="site-state-item-count">3</span>
+												<span class="site-state-item-name">日志</span>
+											</a>
+										</div>
+										<div class="site-state-item site-state-categories">
+											<a href="/categories/">
+
+												<span class="site-state-item-count">1</span>
+												<span class="site-state-item-name">分类</span></a>
+										</div>
+										<div class="site-state-item site-state-tags">
+											<a href="/tags/">
+
+												<span class="site-state-item-count">3</span>
+												<span class="site-state-item-name">标签</span></a>
+										</div>
+									</nav>
+								</div>
+								<div class="links-of-author motion-element">
+									<span class="links-of-author-item">
+										<a href="https://github.com/ElandWoo"
+											title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;russelltao" rel="noopener"
+											target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+									</span>
+									<span class="links-of-author-item">
+										<a href="https://m.igetget.com/native/mine/account#/user/detail?enId=d35z49NXgYKw83yzzlxnpb0lEQLP2q"
+											title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;russelltao" rel="noopener"
+											target="_blank"><i class="fab fa-github fa-fw"></i>Dedao</a>
+									</span>
+									<span class="links-of-author-item">
+										<a href="https://blog.csdn.net/weixin_52211329?type=blog"
+											title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;russelltao" rel="noopener"
+											target="_blank"><i class="fab fa-github fa-fw"></i>CSDN</a>
+									</span>
+								</div>
+
+
+
+								<div class="links-of-recent-posts motion-element">
+									<div class="links-of-recent-posts-title">
+										<i class="fa fa-history fa-fw"></i>
+										最近文章
+									</div>
+									<ul class="links-of-recent-posts-list">
+										<li class="links-of-recent-posts-item">
+											<a href="" title="">好梦由来最易醒</a>
+										</li>
+										<div></div>
+										<li class="links-of-recent-posts-item">
+											<a href="" title="">好梦由来最易醒</a>
+										</li>
+										<div></div>
+										<li class="links-of-recent-posts-item">
+											<a href="" title="">好梦由来最易醒</a>
+										</li>
+										<div></div>
+										<li class="links-of-recent-posts-item">
+											<a href="" title="">好梦由来最易醒</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+
+					</div>
+				</aside>
+				<div id="sidebar-dimmer"></div>
 			</div>
 		</main>
 
 		<footer class="footer">
 			<br class="footer-inner">
+			<div class="copyright">
+				<span class="with-love">
+					<i class="fa fa-heart"></i>
+				</span>
+				<span class="author" itemprop="copyrightHolder">烦恼全吴公子</span>
+				<span class="post-meta-divider">|</span>
+				<span class="post-meta-item-icon">
+					<i class="fa fa-chart-area"></i>
+				</span>
+				<span class="post-meta-item-text">站点总字数：</span>
+				<span title="站点总字数">345k</span>
+				<span class="post-meta-divider">|</span>
+				<span class="post-meta-item-icon">
+					<i class="fa fa-coffee"></i>
+				</span>
+				<span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+				<span title="站点阅读时长">5:14</span>
+			</div>
 			<dir></dir>
 			<dir></dir>
-			<p>你当像鸟飞往你的山</p>
-			<dir></dir>
-			<a href="https://www.mubucm.com/doc/7Eqhv5lBXWh"><img class="someimg" src="./hou.png" alt="" width="30"></a>
+		</footer>
 	</div>
-	</footer>
-	</div>
-	<script>
-		let mucics = document.getElementById('audio')
-		document.body.addEventListener('mousemove', function () {
-			setTimeout(() => {
-				mucics.play();
-			}, 2000);
-		}, false);
-	</script>
+
 
 
 	<script>
