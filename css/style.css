@@ -77,6 +77,7 @@ audio {
 
 .centercolumn {
   float: right;
+  background: white;
   border-radius: 16px;
   box-shadow: initial;
   box-sizing: border-box;
@@ -251,7 +252,8 @@ audio {
 
 /*快速回到页面顶部未成功*/
 .back-to-top {
-  z-index：999 font-size: 12px;
+  z-index: 999;
+  font-size: 12px;
   text-align: center;
   transition-delay: 0s;
   transition-duration: 0.2s;
