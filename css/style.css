@@ -241,6 +241,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   .navbar-fixed-top .navbar-collapse,
   .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
