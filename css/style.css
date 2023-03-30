@@ -533,7 +533,7 @@ audio {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #FFC0CB;
+  background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
   font-size: 14px;
   padding: 10px 15px;
@@ -544,7 +544,7 @@ audio {
 }
 
 #back-to-top:hover {
-  background-color: #FFB6C1;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 
