@@ -427,7 +427,7 @@ audio {
 
 
 .footer {
-  background-image: linear-gradient(white, rgba(255, 192, 203, 0.418), pink);
+  background-image: linear-gradient(white-space);
   text-align: center;
   font-size: 0.875em;
 
@@ -463,7 +463,7 @@ audio {
   position: absolute;
   top: 27%;
   left: 41%;
-  background-image: linear-gradient(white, rgba(255, 192, 203, 0.418), pink);
+  background-image: linear-gradient(whitesmoke);
   ;
   border-radius: 40px;
   border-color: dodgerblue;
