@@ -1,0 +1,268 @@
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f3f4;
+  color: #333;
+}
+
+header {
+  background-color: #f7c3c3;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.6em;
+  color: #e2456c;
+  margin-bottom: 20px;
+}
+
+.video-container,
+.mindmap-container {
+  color: #FFB6C1;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #e2456c;
+}
+
+#mindmap {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  min-height: 400px;
+  padding: 10px;
+}
+
+/* ...之前的CSS代码... */
+
+/* 思维导图容器 */
+.mindmap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+/* 思维导图 */
+#mindmap {
+  border: 1px solid #FFC0CB;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+main {
+  padding: 20px;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.photo-gallery img {
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: white;
+}
+
+/* 列表样式 */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* 分区样式 */
+section {
+  margin-bottom: 40px;
+}
+
+/* 照片悬停效果 */
+.photo-gallery img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* 页脚样式 */
+footer {
+  background-color: #f7c3c3;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.photo-gallery,
+.memory-list,
+.date-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* 原样式 */
+/* ... */
+
+/* 导航栏样式 */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: #e2456c;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FFC0CB;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#back-to-top:hover {
+  background-color: #FFB6C1;
+}
+
+h2,
+h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+
+  /* 调整标题字体大小 */
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  /* 调整导航栏样式 */
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav a {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  /* 调整网格布局 */
+  .photo-gallery,
+  .memory-list,
+  .date-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+
+/* ...之前的CSS代码... */
+
+.music-player {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.music-player img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.music-player.rotating {
+  animation: rotation 30s infinite linear;
+}
+
+/* 添加旋转动画关键帧 */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
