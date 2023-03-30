@@ -5,7 +5,6 @@
   /*宽高的设置值包括border等*/
 }
 
-
 body {
   background: url(../images/avator.png) no-repeat;
   /* 背景图垂直、水平均居中 */
@@ -369,7 +368,7 @@ audio {
 
 /* 文章卡片 */
 .card {
-  background: rgba(255, 255, 255, 0.401);
+  background: rgba(255, 255, 255, 0.356);
   padding: 20px;
   margin-top: 20px;
   border-radius: 50px;
