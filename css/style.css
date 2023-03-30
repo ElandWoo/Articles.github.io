@@ -414,6 +414,7 @@ audio {
   justify-content: space-between;
   padding: 0 400px;
   box-sizing: border-box;
+  z-index: 1000;
   overflow: hidden;
 }
 
@@ -526,79 +527,26 @@ audio {
   text-align: center;
 }
 
-/*快速回到页面顶部未成功*/
-.back-to-top.back-to-top-on {
-  bottom: 30px;
-}
-
-.back-to-top {
-  left: auto;
-  right: 30px;
-}
-
-.back-to-top {
-  background: #222;
-  bottom: -100px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  left: 30px;
-  opacity: 0.6;
-  padding: 0 6px;
+/*快速回到页面顶部*/
+#back-to-top {
+  display: none;
   position: fixed;
-  transition-property: bottom;
-  z-index: 1300;
-  width: initial;
-}
-
-.back-to-top {
-  font-size: 12px;
-  text-align: center;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
-.back-to-top {
-  z-index: 999;
-  font-size: 12px;
-  text-align: center;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-
-.back-to-top {
-  background: #222;
-  bottom: 30px;
-  box-sizing: border-box;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FFC0CB;
   color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  left: 30px;
-  opacity: 0.6;
-  padding: 0 6px;
-  position: fixed;
-  transition-property: bottom;
-  z-index: 1300;
-  width: 40px;
+  z-index: 1000;
 }
 
-.back-to-top:hover {
-  color: #fc6423;
+#back-to-top:hover {
+  background-color: #FFB6C1;
 }
 
-
-@media (max-width: 991px) {
-  .back-to-top {
-    left: 20px;
-    opacity: 0.8;
-  }
-}
-
-.back-to-top {
-  left: 30px;
-  right: auto;
-}
 
 @media (max-width: 991px) {
   .back-to-top {
