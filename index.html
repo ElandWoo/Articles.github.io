@@ -9,7 +9,6 @@
   <!--进度条，回到页顶-->
   <button id="back-to-top" title="回到顶部">&uarr;</button>
   <script src="script/script.js"></script>
-  <button id="back-to-top" title="回到顶部">&uarr;</button>
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -91,28 +90,6 @@
         music.play();
       }
     };
-  </script>
-
-  <script>
-    $(document).ready(function () {
-      // ...之前的思维导图代码...
-
-      // 回到顶部按钮
-      var backToTopButton = $('#back-to-top');
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-          backToTopButton.fadeIn();
-        } else {
-          backToTopButton.fadeOut();
-        }
-      });
-
-      backToTopButton.click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 800);
-        return false;
-      });
-    });
-
   </script>
   <!--书签-->
   <a role="button" class="book-mark-link book-mark-link-fixed"></a>
