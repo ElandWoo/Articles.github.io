@@ -1316,14 +1316,15 @@ container {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .centercolumn {
-    float: left;
+    float: none;
     width: 100%;
   }
 
   .card {
-    padding: 20px;
+    padding: 10px;
+    margin: 10px;
   }
 
   .post-button {
@@ -1332,10 +1333,6 @@ container {
 }
 
 @media (max-width: 600px) {
-  .card {
-    padding: 10px;
-    margin: 10px;
-  }
 
   h2,
   h4 {
@@ -1343,7 +1340,7 @@ container {
   }
 
   p {
-    text-indent: 1em;
+    text-indent: 2em;
   }
 
   .post-button a {
@@ -1354,7 +1351,6 @@ container {
 @media screen and (max-width: 767px) {
   .sidebar {
     margin-top: 50px;
-    width: 0;
   }
 
   .sidebar-inner {
