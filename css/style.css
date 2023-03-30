@@ -1341,6 +1341,14 @@ container {
 	}
 
 @media screen and (max-width: 767px) {
+.centercolumn {
+    border-radius: 16px;
+    box-shadow: initial;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 90%;
+    /*width: calc(100% - 252px);*/
+  }
   .sidebar {
     margin-top: 50px;
   }
