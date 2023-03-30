@@ -1299,6 +1299,7 @@ container {
 
 /* 媒体查询 */
 @media screen and (max-width: 768px) {
+
   /* 手机屏幕上的样式 */
   .musicicon {
     position: fixed;
@@ -1308,64 +1309,72 @@ container {
     height: 30px;
     z-index: 100;
   }
+
   .music {
     width: 100%;
     height: 100%;
   }
 }
-	@media screen and (max-width: 600px) {
-		.centercolumn {
-			width: 100%;
-		}
-		.card {
-			padding: 20px;
-		}
-		.post-button {
-			text-align: center;
-		}
+
+@media screen and (max-width: 600px) {
+  .centercolumn {
+    float: left;
+    width: 100%;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .post-button {
+    text-align: center;
+  }
 }
-	@media (max-width: 600px) {
-		.card {
-			padding: 10px;
-			margin: 10px;
-		}
-		h2, h4 {
-			text-align: center;
-		}
-		p {
-			text-indent: 1em;
-		}
-		.post-button a {
-			font-size: 12px;
-		}
-	}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  h2,
+  h4 {
+    text-align: center;
+  }
+
+  p {
+    text-indent: 1em;
+  }
+
+  .post-button a {
+    font-size: 12px;
+  }
+}
 
 @media screen and (max-width: 767px) {
-.centercolumn {
-    border-radius: 16px;
-    box-shadow: initial;
-    box-sizing: border-box;
-    padding: 40px;
-    width: 90%;
-    /*width: calc(100% - 252px);*/
-  }
   .sidebar {
     margin-top: 50px;
+    width: 0;
   }
+
   .sidebar-inner {
     opacity: 1;
     transform: initial;
   }
+
   .sidebar-nav {
     display: none;
   }
+
   .site-overview-wrap {
     max-height: none;
     opacity: 1;
   }
+
   .links-of-author {
     display: none;
   }
+
   .links-of-recent-posts-list li {
     display: block;
     margin-bottom: 10px;
