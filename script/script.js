@@ -1,5 +1,5 @@
 // JavaScript代码
-const backToTopButton = document.querySelector('.back-to-top');
+const backToTopButton = document.querySelector('.back-to-top-btn');
 
 window.addEventListener('scroll', () => {
   if (window.pageYOffset > 100) {
