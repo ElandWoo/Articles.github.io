@@ -21,7 +21,6 @@ html {
   height: 100%;
 }
 
-
 .content {
   perspective: 100px;
   width: 100%;
@@ -529,38 +528,23 @@ audio {
 }
 
 /*快速回到页面顶部*/
-.back-to-top-btn {
+.back-to-top {
+  display: none;
   position: fixed;
-  bottom: 30px;
-  left: 30px;
-  width: 50px;
-  height: 50px;
-  background-color: #ccc;
-  border-radius: 50%;
-  opacity: 0.7;
-  transition: opacity 0.2s ease-in-out;
+  bottom: 20px;
+  left: 20px;
   z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
-.back-to-top-btn:hover {
-  opacity: 1;
-  background-color: #bbb;
+.back-to-top:hover {
+  background-color: #555;
 }
-
-.back-to-top-icon {
-  width: 24px;
-  height: 24px;
-  fill: #fff;
-  transition: transform 0.2s ease-in-out;
-}
-
-.back-to-top-btn:hover .back-to-top-icon {
-  transform: translateY(-3px);
-}
-
 
 
 /*书签*/
@@ -867,19 +851,14 @@ a {
 .sidebar-nav li:hover {
   color: #fc6423;
 }
-
-
-
 .sidebar-nav .sidebar-nav-active:hover {
   color: #fc6423;
 }
-
 .sidebar-panel {
   display: none;
   overflow-x: hidden;
   overflow-y: auto;
 }
-
 .sidebar-panel-active {
   display: block;
 } */
