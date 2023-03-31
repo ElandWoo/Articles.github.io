@@ -14,7 +14,19 @@
 
 <body style="background-color:white;">
 	<!--进度条，回到页顶-->
-	<button id="back-to-top" class="back-to-top" title="回到顶部"><i class="fas fa-arrow-up"></i></button>
+		<button class="back-to-top-btn" aria-label="返回顶部">
+		<svg class="back-to-top-icon" viewBox="0 0 24 24">
+			<defs>
+				<linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+					<stop offset="0%" style="stop-color:rgb(105,105,105);stop-opacity:1" />
+					<stop offset="100%" style="stop-color:rgb(192,192,192);stop-opacity:1" />
+				</linearGradient>
+			</defs>
+			<path fill="url(#grad)" d="M12 2L1 14h22z" />
+			<path fill="#fff" d="M12 10.6L6.7 16 8 17.4 12 13.4 16 17.4 17.3 16z" />
+		</svg>
+
+	</button>
 
 	<header>
 		<div class="container" id="navigation_menu">
