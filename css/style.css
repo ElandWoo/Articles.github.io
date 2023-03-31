@@ -528,22 +528,48 @@ audio {
 }
 
 /*快速回到页面顶部*/
-.back-to-top {
-  display: none;
+.back-to-top-btn {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 4px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
   z-index: 9999;
-  font-size: 16px;
-  color: #fff;
-  background-color: #333;
-  border-radius: 0;
-  padding: 10px 15px;
-  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.back-to-top:hover {
-  background-color: #555;
+.back-to-top-btn:hover {
+  opacity: 1;
+  background-color: #bbb;
+}
+
+.back-to-top-percent {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.back-to-top-icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.back-to-top-btn:hover .back-to-top-icon {
+  transform: translateY(-3px);
 }
 
 
