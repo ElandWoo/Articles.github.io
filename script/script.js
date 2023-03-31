@@ -1,23 +1,20 @@
-const backToTopButton = document.querySelector('.back-to-top-btn');
+// 获取页面总高度
+const pageHeight = document.documentElement.scrollHeight;
 
+// 获取百分数元素
+const percentElement = document.querySelector('.back-to-top-percent');
+
+// 添加滚动事件监听器
 window.addEventListener('scroll', () => {
-  const scrollHeight = document.documentElement.scrollHeight;
-  const scrollTop = document.documentElement.scrollTop;
-  const clientHeight = document.documentElement.clientHeight;
-  const scrollPercentage = (scrollTop + clientHeight) / scrollHeight * 100;
-
-  // Update the scroll percentage shown on the button
-  backToTopButton.querySelector('.back-to-top-percent').textContent = ' ${ Math.round(scrollPercentage) }%';
-
-  // If the user has scrolled past 20% of the page height, show the button
-  if (scrollPercentage > 20) {
-    backToTopButton.style.display = 'flex';
-  } else {
-    backToTopButton.style.display = 'none';
-  }
+  // 计算当前滚动距离与页面总高度的比例
+  const scrollPercent = Math.floor((window.scrollY / (pageHeight - window.innerHeight)) * 100);
+  // 更新百分数显示
+  percentElement.textContent = `${scrollPercent}%`;
 });
 
-backToTopButton.addEventListener('click', () => {
+// 添加返回顶部事件监听器
+document.querySelector('.back-to-top-btn').addEventListener('click', () => {
+  // 使用动画返回页面顶部
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
