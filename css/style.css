@@ -532,7 +532,7 @@ audio {
 position: fixed;
 bottom: 50px;
 left: 50px;
-width: 50px;
+width: 40px;
 height: 30px;
 background-color: #ccc;
 border-radius: 5px;
@@ -553,6 +553,7 @@ opacity: 1;
 background-color: #bbb;
 }
 
+/*
 .back-to-top-icon {
 width: 20px;
 height: 20px;
@@ -560,6 +561,8 @@ margin-right: 10px;
 fill: #fff;
 transition: transform 0.2s ease-in-out;
 }
+
+*/
 
 .back-to-top-btn:hover .back-to-top-icon {
 transform: translateY(-3px);
