@@ -1,20 +1,16 @@
-// 获取页面总高度
-const pageHeight = document.documentElement.scrollHeight;
+const backToTopBtn = document.querySelector('.back-to-top-btn');
+const percentSpan = backToTopBtn.querySelector('.back-to-top-percent');
 
-// 获取百分数元素
-const percentElement = document.querySelector('.back-to-top-percent');
-
-// 添加滚动事件监听器
+// Update the percentage displayed in the span element as the user scrolls
 window.addEventListener('scroll', () => {
-  // 计算当前滚动距离与页面总高度的比例
-  const scrollPercent = Math.floor((window.scrollY / (pageHeight - window.innerHeight)) * 100);
-  // 更新百分数显示
-  percentElement.textContent = `${scrollPercent}%`;
+  const scrollTop = document.documentElement.scrollTop  document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight  document.body.scrollHeight;
+  const percentScrolled = (scrollTop / (scrollHeight - window.innerHeight)) * 100;
+  percentSpan.textContent = ${Math.round(percentScrolled)}%;
 });
 
-// 添加返回顶部事件监听器
-document.querySelector('.back-to-top-btn').addEventListener('click', () => {
-  // 使用动画返回页面顶部
+// Scroll to the top of the page when the button is clicked
+backToTopBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
