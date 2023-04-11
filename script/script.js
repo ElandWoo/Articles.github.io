@@ -1,6 +1,16 @@
 const backToTopBtn = document.querySelector('.back-to-top-btn');
 const percentSpan = backToTopBtn.querySelector('.back-to-top-percent');
 
+// Hide the button when the page is at the top
+window.addEventListener('scroll', () => {
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  if (scrollTop === 0) {
+    backToTopBtn.style.display = 'none';
+  } else {
+    backToTopBtn.style.display = 'block';
+  }
+});
+
 // Update the percentage displayed in the span element as the user scrolls
 window.addEventListener('scroll', () => {
   const scrollTop = document.documentElement.scrollTop  document.body.scrollTop;
